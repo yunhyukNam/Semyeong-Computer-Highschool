@@ -2,55 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>30211 남윤혁</title>
     <style>
-        * {
-            padding: 0;
-            margin: 0 auto;
-        }
-        #contents {
-            width: 500px;
-        }
-        img {
-            float: left;
-        }
-        ul li {
-            display: inline-block;
-            list-style: none;
-            margin-top: 20px;
-        }
-        #showResult {
-            padding-top: 40px;
-            text-align: left;
-        }
+
     </style>
+    <script src="js/1020.js"></script>
+    <!-- <script>
+        var birthYear;
+        /*prompt("나이를 입력하세요.", "20"); // 입력문 */
+        birthYear = prompt("출생년도를 입력하세요. ex) 1990", ""); // 입력문
+        document.write("당신의 출생년도는 " + "<br>" + birthYear + "년도 입니다.");
+        confirm();
+        alert();
+        console.log();
+    </script> -->
 </head>
 <body>
-    <div id="contents">
-        <img src="img/sale.png" alt="sale_pic">
-        <ul>
-            <li>
-                원래 가격 <input type="text" id="cost"> 원
-            </li>
-            <li>
-                할인율 <input type="text" id="sale"> %
-            </li>
-            <li>
-                <input type="button" onclick="calc()" value="할인 가격 계산하기">
-            </li>
-        </ul>
-        <div id="showResult"></div>
-    </div>
+    <div id="a">사과</div>
+    <div id="b">수박</div>
+    <div id="c">참외</div>
     <script>
-        var originPrice = document.querySelector('#cost').innerHTML;
-        var rate = document.querySelector('#sale').innerHTML;
+        var idA = 
+        document.write("자바스크립트 결과는 " + idA + "<br>");
 
-        function calc(originPrice, rate) {            
-            var savedPrice = originPrice * (rate / 100);
-            var resultPrice = originPrice - savedPrice;
+        document.getElementById('a').innerHTML = "멜론";
+        
+        var num1 = prompt("첫 번째 숫자 입력!");
+        var num2 = prompt("두 번째 숫자 입력!");
 
-            document.getElementById("showResult").innerHTML = "<p>" +"상품의 원래 가격은 " + originPrice + "원이고, 할인율은 " + rate + "% 입니다." + savedPrice + "원을 절약한 " + resultPrice + "원에 살 수 있습니다." + "</p>";
-        }
+        document.write("num1 = " + num1 + ", num2 = " + num2 + "<br>");
+
+        var sum = parseInt(num1) + parseInt(num2);
+        var sub = parseInt(num1) - parseInt(num2);
+        var mul = parseInt(num1) * parseInt(num2);
+        var div = parseInt(num1) / parseInt(num2);
+        
+        document.write(num1 + " + " + num2 + " = " + sum + "<br>");
+        document.write(num1 + " - " + num2 + " = " + sub + "<br>");
+        document.write(num1 + " * " + num2 + " = " + mul + "<br>");
+        document.write(num1 + " / " + num2 + " = " + div);
     </script>
 </body>
 </html>
