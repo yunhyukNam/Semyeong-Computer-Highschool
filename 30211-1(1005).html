@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>30211-1 2021-10-05</title>
+    <!--<link rel="stylesheet" href="css/30211-1.css">-->
+    <style>
+        section ul {
+            border: 1px dotted blue;
+        }
+        section > ul {
+            border: 1px dotted red;
+        }
+        h1 + ul {
+            color: green;
+            font-size: 20px;
+        }
+        h1 ~ ul {
+            color: pink;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav ul li {
+            float: left;
+            margin: 10px;
+        }
+        nav ul li a {
+            display: block;
+            width: 100px;
+            background: #FF0;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+        a[href] {
+            background: orange;
+        }
+        a[target="_blank"] {
+            background: skyblue;
+        }
+        a:link, a:visited{
+            background: green;
+            color: #FFF;
+        }
+        a:hover {
+            background: #222;
+            color: #FFF;
+        }
+        a:active {
+            background: #F00;
+        }
+        form fieldset {
+            width: 300px;
+            margin-bottom: 25px;
+        }
+        form legend {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        input:disabled {
+            background: #DDD;
+            border: 1px solid #CCC;
+        }
+        input:checked + span {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>예약 방법 및 요금</h1>
+        <ul>
+            <li>
+                예약 방법
+                <ul>
+                    <li>직접 통화</li>
+                    <li>문자 남기기</li>
+                </ul>
+            </li>
+            <li>
+                요금
+                <ul>
+                    <li>1인 : 40,000원</li>
+                    <li>2인 : 60,000원</li>
+                    <li>3인 : 80,000원</li>
+                    <li>4인 : 100,000원</li>
+                </ul>
+            </li>
+        </ul>
+        <nav>
+            <ul>
+                <li>
+                    <a>메인메뉴 :</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">메뉴1</a>
+                </li>
+                <li>
+                    <a href="#">메뉴2</a>
+                </li>
+                <li>
+                    <a href="#">메뉴3</a>
+                </li>
+                <li>
+                    <a href="#">메뉴4</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <form>
+        <fieldset>
+            <legend>사용자 정보</legend>
+                <label for="username">
+                    이름 <input type="text" name="username">
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend>신청 과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요.</p>
+            <label>
+                <input type="radio" name="subject" checked>
+                <span>국어</span>
+            </label>
+            <label>
+                <input type="radio" name="subject">
+                <span>영어</span>
+            </label>
+            <label>
+                <input type="radio" name="subject">
+                <span>수학</span>
+            </label>
+        </fieldset>        
+    </form>
+</body>
+</html>

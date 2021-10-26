@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0 auto;
+        }
+        #contents {
+            width: 500px;
+        }
+        img {
+            float: left;
+        }
+        ul li {
+            display: inline-block;
+            list-style: none;
+            margin-top: 20px;
+        }
+        #showResult {
+            padding-top: 40px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="contents">
+        <img src="img/sale.png" alt="sale_pic">
+        <ul>
+            <li>
+                원래 가격 <input type="text" id="cost"> 원
+            </li>
+            <li>
+                할인율 <input type="text" id="sale"> %
+            </li>
+            <li>
+                <input type="button" onclick="calc()" value="할인 가격 계산하기">
+            </li>
+        </ul>
+        <div id="showResult"></div>
+    </div>
+    <script>
+        var originPrice = document.querySelector('#cost').innerHTML;
+        var rate = document.querySelector('#sale').innerHTML;
+
+        function calc(originPrice, rate) {            
+            var savedPrice = originPrice * (rate / 100);
+            var resultPrice = originPrice - savedPrice;
+
+            document.getElementById("showResult").innerHTML = "<p>" +"상품의 원래 가격은 " + originPrice + "원이고, 할인율은 " + rate + "% 입니다." + savedPrice + "원을 절약한 " + resultPrice + "원에 살 수 있습니다." + "</p>";
+        }
+    </script>
+</body>
+</html>
