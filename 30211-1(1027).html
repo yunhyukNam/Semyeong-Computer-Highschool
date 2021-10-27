@@ -13,10 +13,24 @@
     <div id="c">참외</div>
 
     <script>
-        var IDa = document.getElementById('a').innerHTML;
+        /*var IDa = document.getElementById('a').innerHTML;
         document.write("자바 스크립트 결과 = " + IDa);
 
-        document.querySelector('#a').innerHTML='멜론';
+        document.querySelector('#a').innerHTML='멜론';*/
+        
+        sayHello()
+        
+        function sayHello() {
+            var hello = "안녕하세요";
+            document.write(hello);
+        }
+
+        document.write("<br> 사각형의 면적 = " + squareArea(100, 50))
+
+        function squareArea(width, height) {
+            var area = width * height;
+            return area;
+        }
     </script>
 </body>
 </html>
