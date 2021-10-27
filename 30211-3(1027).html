@@ -30,10 +30,12 @@
         <img src="img/sale.png" alt="sale_pic">
         <ul>
             <li>
-                원래 가격 <input type="text" id="cost"> 원
+                <label>원래 가격</label>
+                <input type="text" id="cost"> 원
             </li>
             <li>
-                할인율 <input type="text" id="sale"> %
+                <label>할인율</label>
+                <input type="text" id="sale"> %
             </li>
             <li>
                 <input type="button" onclick="sale_calc()" value="할인 가격 계산하기">
@@ -41,11 +43,10 @@
         </ul>
         <div id="showResult"></div>
     </div>
-    <script>
-        var originPrice = document.querySelector('#cost').innerHTML;
-        var rate = document.querySelector('#sale').innerHTML;
-
-        function sale_calc(originPrice, rate) {            
+    <script>        
+        function sale_calc() {            
+            var originPrice = document.querySelector('#cost').value;
+            var rate = document.querySelector('#sale').value;
             var savedPrice = originPrice * (rate / 100);
             var resultPrice = originPrice - savedPrice;
             
