@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <title>2021-11-01 1교시</title>
     <style>
+        * {
+            padding: 0;
+            margin: 0 auto;
+        }
         .box {
             width: 200px;
             height: 200px;
+            margin-top: 100px;
             background: red;
             border: 1px solid black;
+            transition-duration: 2s;
+            transition-timing-function: ease;
         }
         .box:hover {
             width: 100px;
             height: 100px;
+            margin-top: 150px;
+            background: #FF6E5F;
+            transform: rotate(270deg);
         }
     </style>
     <script>
