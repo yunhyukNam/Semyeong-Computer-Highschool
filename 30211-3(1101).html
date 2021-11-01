@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2021-11-01 2교시</title>
+    <style>
+        div {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-image: url(img/f1.png);
+            border: 2px solid black;
+            animation-name: myani;
+            animation-duration: 3s;
+        }
+        @keyframes myani {
+            0% {
+                left: 10px;
+            }
+            40% {
+                top: 30px;
+                background-image: url(img/f2.png);
+            }
+            100% {
+                left: 500px;
+            }
+        }
+        /*
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation-duration: 3s;
+            animation-name: change-bg;
+        }
+        @keyframes change-bg {
+            from {
+                background-color: blue;
+                border: 1px solid black;
+            }
+            to {
+                background-color: darkcyan;
+                border: 1px solid blue;
+                border-radius: 50px;
+            }
+        }
+        */
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
