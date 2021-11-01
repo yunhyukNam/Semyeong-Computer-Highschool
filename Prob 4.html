@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>사진 위로 마우스 포인터를 올렸을 때 사진이 확대되는 애니메이션</title>
+    <style>
+        #photo {
+            width: 400px;
+            height: 280px;
+        }
+        #photo:hover {
+            width: 600px;
+            height: 420px;
+            transition: all 1s;
+            transform-origin: left top;
+            box-shadow: 5px 5px 3px black;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/lake.jpg" id="photo">
+</body>
+</html>

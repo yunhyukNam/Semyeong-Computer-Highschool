@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>마우스 포인터를 사진 위로 올렸을 때 사진이 천천히 회전하는 효과</title>
+    <style>
+        * {
+            background-color: black;
+        }
+        #scene {
+            width: 600px;
+            height: 395px;
+        }
+        .whiteborder {
+            border: 5px solid white;
+        }
+        #scene:hover {
+            transform: rotate(10deg);
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/scene2.jpg" id="scene" class="whiteborder">
+</body>
+</html>
