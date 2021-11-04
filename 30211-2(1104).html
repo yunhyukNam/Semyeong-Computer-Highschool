@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #item {
+            position: relative;
+            width: 500px;
+            margin: auto;
+            padding: 15px 20px;
+        }
+        button {
+            border: 1px solid #CCC;
+            background: rgba(255, 255, 255, 0.7);
+            font-size: 12px;
+        }
+        .over {
+            position: absolute;
+            left: 30px;
+            bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="item">
+        <img src="img/flower1.jpg" id="flower">
+        <button class="over">상세설명보기</button>
+    </div>
+    <script>
+        var img = document.querySelector('#flower');
+        var button = document.querySelector('.over');
+
+        button.onclick = function() {
+            alert("마우스를 눌렀습니다.");
+        }
+        img.onmouseover = function() {
+            img.style.border = "5px solid black";
+        }
+        img.onmouseout = function() {
+            img.style.border = "";
+        }
+    </script>
+</body>
+</html>
